@@ -1,0 +1,61 @@
+
+
+$primary: #ffffff;
+$secondary: #f0c22a;
+$success: #00ADB5;
+$danger: #df6616;
+$warning: #f1c450;
+$info: #242f40;
+$light: #EEEEEE;
+$dark: #363636; // Change for the dark background
+
+
+$enable-shadows: true;
+$prefix: "mo-";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+
+body {
+    background: blue;
+}
+
+/* CSS for NavBar */
+#NavBar {
+    background-color: blue;
+    overflow: hidden;
+  }
+  /* CSS for NavBar Anchor Tag i.e. Links  */
+  #NavBar a {
+    color: $primary;
+    text-align: center;
+    padding: 15px;
+    float: left;
+    display: block;
+  }
+
+#call {
+    text-align: center;
+}
+
+.showcase-img{
+    width: 25%;
+    object-fit: cover;
+}
+
+.call {
+    text-align: center; 
+    -webkit-text-fill-color: $secondary;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    background-color: $dark;
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
